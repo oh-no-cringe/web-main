@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>НГТУ НЭТИ — История и кампус</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span>English</span>
+        <span>pk@nstu.ru</span>
+        <span>+7 (383) 319 59 99</span>
+        <span>приёмная комиссия</span>
+      </div>
+    </div>
+
+    <div class="header-main">
+      <div class="brand">
+        <div class="logo-slot">
+          <img src="logo.png" alt="Логотип НГТУ" id="logoImage" />
+          <div class="logo-placeholder" id="logoPlaceholder"></div>
+        </div>
+        <div class="brand-text"></div>
+      </div>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="https://www.nstu.ru">Официальный сайт</a>
+        <a href="https://www.nstu.ru/entrance/enrollment_campaign">Поступающим</a>
+        <a href="#campus">Карта</a>
+        <a href="#timeline">Этапы</a>
+        <a href="#today">Сегодня</a>
+      </nav>
+
+      <!-- Панель доступности для слабовидящих -->
+      <div class="accessibility-panel" id="accessibilityPanel">
+        <button class="a11y-toggle" id="a11yToggle" aria-label="Открыть настройки доступности" title="Версия для слабовидящих">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 8v8"></path>
+            <path d="M8 12h8"></path>
+          </svg>
+        </button>
+        <div class="a11y-options" id="a11yOptions" role="dialog" aria-label="Настройки доступности">
+          <h4>Версия для слабовидящих</h4>
+          <div class="a11y-section">
+            <span class="a11y-label">Цветовая схема</span>
+            <button class="a11y-btn active" data-mode="default">Обычная</button>
+            <button class="a11y-btn" data-mode="high-contrast">Чёрно-белая</button>
+            <button class="a11y-btn" data-mode="yellow-black">Жёлто-чёрная</button>
+            <button class="a11y-btn" data-mode="blue-white">Сине-белая</button>
+          </div>
+          <div class="a11y-section">
+            <span class="a11y-label">Размер шрифта</span>
+            <button class="a11y-btn font-btn active" data-size="normal">A</button>
+            <button class="a11y-btn font-btn" data-size="large">A+</button>
+            <button class="a11y-btn font-btn" data-size="xlarge">A++</button>
+          </div>
+          <div class="a11y-section">
+            <button class="a11y-btn" id="a11ySpacing">Широкий интервал</button>
+            <button class="a11y-btn" id="a11yImages">Скрыть изображения</button>
+            <button class="a11y-btn" id="a11yUnderline">Подчёркивать ссылки</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Главный баннер">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <p class="hero-top">История, кампус и развитие университета</p>
+        <h2>НГТУ НЭТИ — один из ведущих технических вузов страны</h2>
+        <p class="hero-text">
+          От первых занятий в переоборудованных квартирах до крупного современного
+          университета с учебными корпусами, общежитиями, лабораториями и научными разработками.
+        </p>
+        <a href="#history" class="hero-button">Читать историю</a>
+      </div>
+
+      <div class="hero-side-card">
+        <div class="hero-year">1950</div>
+        <p>год начала истории НГТУ НЭТИ</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-layout">
+    <aside class="sidebar" aria-label="Боковое меню">
+      <div class="sidebar-box">
+        <h3>Оглавление</h3>
+        <ul class="toc">
+          <li><a href="#intro">1. Общая информация</a></li>
+          <li><a href="#history">2. Как всё начиналось</a></li>
+          <li><a href="#first-years">3. Первые годы</a></li>
+          <li><a href="#lyshchinsky">4. Эпоха Лыщинского</a></li>
+          <li><a href="#campus">5. Кампус</a></li>
+          <li><a href="#timeline">6. Этапы развития</a></li>
+          <li><a href="#today">7. НГТУ сегодня</a></li>
+          <li><a href="#facts">8. Интересные факты</a></li>
+          <li><a href="#conclusion">9. Заключение</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section id="intro" class="content-section">
+        <h2>Общая информация</h2>
+        <p id="intro-p1">
+        <a href="#intro-p1" class="anchor" aria-label="Ссылка на абзац">●</a>
+          НГТУ НЭТИ — это один из ведущих вузов страны. Здесь учатся студенты не только
+          со всей России, но и из других стран. Университет известен сильной инженерной
+          школой, развитой научной базой и большим кампусом.
+        </p>
+        <p id="intro-p2">
+          <a href="#intro-p2" class="anchor" aria-label="Ссылка на абзац">●</a>
+          Сегодня вуз сочетает традиции технического образования, современную науку,
+          международное сотрудничество и активную студенческую жизнь.
+        </p>
+      </section>
+
+      <section id="history" class="content-section">
+        <h2>Как всё начиналось</h2>
+        <p id="history-p1">
+          <a href="#history-p1" class="anchor" aria-label="Ссылка на абзац">●</a>
+          История НГТУ НЭТИ началась 19 августа 1950 года, когда в Москве было подписано
+          постановление об организации в Новосибирске Новосибирского электротехнического института.
+        </p>
+        <p id="history-p2">
+          <a href="#history-p2" class="anchor" aria-label="Ссылка на абзац">●</a>
+          После войны стране были нужны инженерные кадры для крупных заводов и промышленности,
+          поэтому создание нового технического вуза в Сибири стало важным государственным шагом.
+        </p>
+        <p id="history-p3">
+          <a href="#history-p3" class="anchor" aria-label="Ссылка на абзац">●</a>
+          Под строительство выделили участок около 20 гектаров на левом берегу Оби.
+          Тогда там были почти пустые поля, которые местные жители использовали под посадку картофеля.
+        </p>
+      </section>
+
+      <section id="first-years" class="content-section">
+        <h2>Первые годы</h2>
+        <p id="first-years-p1">
+          <a href="#first-years-p1" class="anchor" aria-label="Ссылка на абзац">●</a>
+          Планировалось, что институт начнёт работу уже в 1952 году, но из-за нехватки
+          ресурсов и затянувшегося строительства открытие перенесли.
+        </p>
+        <p id="first-years-p2">
+          <a href="#first-years-p2" class="anchor" aria-label="Ссылка на абзац">●</a>
+          Занятия начались 1 сентября 1953 года. Тогда 161 студент учился не в собственных
+          корпусах, а в переоборудованных квартирах на улице Римского-Корсакова.
+        </p>
+        <p id="first-years-p3">
+          <a href="#first-years-p3" class="anchor" aria-label="Ссылка на абзац">●</a>
+          В первые годы студентам было трудно: не было общежитий, не хватало транспорта,
+          а часть студентов добиралась очень долго. Уже в 1954 году появился первый собственный
+          корпус и общежитие — корпус «А».
+        </p>
+      </section>
+
+      <section id="lyshchinsky" class="content-section">
+        <h2>Эпоха Лыщинского</h2>
+        <p id="lyshchinsky-p1">
+          <a href="#lyshchinsky-p1" class="anchor" aria-label="Ссылка на абзац">●</a>
+          В 1955 году институт возглавил Георгий Павлович Лыщинский. Он стал самым молодым
+          ректором в системе высшего образования СССР и сыграл огромную роль в развитии вуза.
+        </p>
+        <p id="lyshchinsky-p2">
+          <a href="#lyshchinsky-p2" class="anchor" aria-label="Ссылка на абзац">●</a>
+          За годы его руководства НЭТИ превратился в крупнейший политехнический институт Сибири.
+          Открывались новые факультеты, развивалась культурная жизнь, появлялись яркие традиции.
+        </p>
+        <p id="lyshchinsky-p3">
+          <a href="#lyshchinsky-p3" class="anchor" aria-label="Ссылка на абзац">●</a>
+          В 1958 году состоялся первый выпуск инженеров. Позже появились важные факультеты,
+          в том числе самолётостроительный, факультет автоматики и вычислительной техники,
+          а также физико-технический факультет.
+        </p>
+      </section>
+
+      <section id="campus" class="content-section">
+        <h2>Кампус университета</h2>
+        <p id="campus-p1">
+          <a href="#campus-p1" class="anchor" aria-label="Ссылка на абзац">●</a>
+          Современный кампус НГТУ НЭТИ — это крупное университетское пространство,
+          где находятся учебные корпуса, общежития, библиотека, спортивные объекты
+          и инфраструктура для студентов.
+        </p>
+
+        <!-- Интерактивная карта с кликабельными точками -->
+        <div class="map-wrapper" role="region" aria-label="Интерактивная карта кампуса">
+          <div class="map-container">
+            <img src="map.png" alt="Карта кампуса НГТУ НЭТИ. На схеме отмечены учебные корпуса, общежития и другие объекты университета. Нажмите на маркер, чтобы перейти на страницу здания." class="map-image">
+            
+            <!-- Левый кампус (Запад) -->
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 15.5%; top: 58%;" data-building="Учебный корпус №1 (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#2563eb;">1</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 24.5%; top: 58%;" data-building="Учебный корпус №2 (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#2563eb;">2</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 33%; top: 58%;" data-building="Учебный корпус №3 (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#2563eb;">3</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 19%; top: 45%;" data-building="Учебный корпус №4 (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#2563eb;">4</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 14%; top: 68%;" data-building="Общежитие №5 (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#f59e0b;">5</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 20%; top: 68%;" data-building="Учебный корпус №6 (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#2563eb;">6</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 10%; top: 58%;" data-building="Учебный корпус №7 (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#2563eb;">7</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 14%; top: 62.5%;" data-building="Учебный корпус №8 (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#2563eb;">8</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 45.5%; top: 79%;" data-building="Учебный корпус №9 (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#2563eb;">9</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 39%; top: 63.5%;" data-building="Учебный корпус №10 (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#f59e0b;">10</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 45%; top: 40%;" data-building="Учебный корпус №1а (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#f59e0b;">1</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 22%; top: 79%;" data-building="Учебный корпус №3а (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#f59e0b;">3</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 22%; top: 36%;" data-building="Спортивный корпус №4 (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#f59e0b;">4</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 12%; top: 42%;" data-building="Общежитие №6 (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#f59e0b;">6</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 35%; top: 79%;" data-building="Учебный корпус №7а (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#f59e0b;">7</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 45%; top: 72%;" data-building="Учебный корпус №2а (Запад)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#f59e0b;">2</span>
+            </a>
+
+            <!-- Правый кампус (Восток) -->
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 66%; top: 29.5%;" data-building="Учебный корпус №1 (Восток)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#16a34a;">1</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 71%; top: 53%;" data-building="Учебный корпус №2 (Восток)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#16a34a;">2</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 89%; top: 29.5%;" data-building="Учебный корпус №3а (Восток)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#16a34a;">3а</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 83%; top: 35.5%;" data-building="Учебный корпус №3б (Восток)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#16a34a;">3б</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 91.5%; top: 58%;" data-building="Учебный корпус №4 (Восток)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#16a34a;">4</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 83%; top: 55.5%;" data-building="Общежитие №5 (Восток)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#2563eb;">5</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 63%; top: 69.5%;" data-building="Учебный корпус №6 (Восток)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#16a34a;">6</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 83%; top: 45%;" data-building="Учебный корпус №8 (Восток)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#16a34a;">8</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 81%; top: 67%;" data-building="Учебный корпус №10 (Восток)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#2563eb;">10</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 83%; top: 75%;" data-building="Общежитие №5а (Восток)" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#16a34a;">5</span>
+            </a>
+            <a href="https://www.nstu.ru" class="map-hotspot" style="left: 73%; top: 49%;" data-building="Библиотека" target="_blank" rel="noopener noreferrer">
+              <span class="hotspot-marker" style="background:#1e3a5f;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+            </a>
+          </div>
+          <p class="map-hint">Нажмите на маркер с номером здания, чтобы перейти на сайт НГТУ НЭТИ</p>
+        </div>
+
+        <p id="campus-p2">
+          <a href="#campus-p2" class="anchor" aria-label="Ссылка на абзац">●</a>
+          В кампус входят учебные корпуса, общежития, типография, спорткомплекс,
+          бассейн, профилакторий, техноцентр и другие объекты. На карте выше показана схема кампуса с основными зданиями и их расположением.
+        </p>
+
+        <div class="campus-grid">
+          <div class="campus-card">
+            <h3>Учебные корпуса</h3>
+            <p>Большая часть учебной и научной работы проходит в корпусах кампуса.</p>
+          </div>
+          <div class="campus-card">
+            <h3>Общежития</h3>
+            <p>Студенты из других городов и стран живут в общежитиях университета.</p>
+          </div>
+          <div class="campus-card">
+            <h3>Спорт</h3>
+            <p>На территории есть спорткомплекс, бассейн и спортивные площадки.</p>
+          </div>
+          <div class="campus-card">
+            <h3>Наука</h3>
+            <p>Университет имеет лаборатории, техноцентр и современную инженерную базу.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline" class="content-section">
+        <h2>Этапы развития</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">1950</div>
+            <div class="timeline-text">
+              Основан Новосибирский электротехнический институт.
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">1953</div>
+            <div class="timeline-text">
+              Начались первые занятия, институт принял первых студентов.
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">1955</div>
+            <div class="timeline-text">
+              Ректором стал Георгий Павлович Лыщинский, начался период активного роста.
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">1958</div>
+            <div class="timeline-text">
+              Состоялся первый выпуск инженеров.
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">1992</div>
+            <div class="timeline-text">
+              НЭТИ был переименован в Новосибирский государственный технический университет.
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2019</div>
+            <div class="timeline-text">
+              В ходе ребрендинга университет вернул историческую аббревиатуру и стал НГТУ НЭТИ.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="today" class="content-section">
+        <h2>НГТУ сегодня</h2>
+        <p id="today-p1">
+          <a href="#today-p1" class="anchor" aria-label="Ссылка на абзац">●</a>
+          Сегодня университет — это 8 учебных корпусов, 10 общежитий, библиотека,
+          Дворец спорта с легкоатлетическим манежем, бассейн и базы отдыха.
+        </p>
+        <p id="today-p2">
+          <a href="#today-p2" class="anchor" aria-label="Ссылка на абзац">●</a>
+          НГТУ НЭТИ участвует в программе «Приоритет-2030» и развивает современные
+          инженерные направления: системы для самолёта Ил-114-300, зарядные станции
+          для электромобилей, оборудование для установки СКИФ, а также беспилотные технологии.
+        </p>
+        <p id="today-p3">
+          <a href="#today-p3" class="anchor" aria-label="Ссылка на абзац">●</a>
+          За 75 лет университет подготовил более 200 тысяч специалистов.
+          Среди выпускников есть академики, депутаты и основатели крупных компаний.
+        </p>
+      </section>
+
+      <section id="facts" class="content-section">
+        <h2>Интересные факты</h2>
+        <div class="facts-grid">
+          <article class="fact-box">
+            <span class="fact-number">20 га</span>
+            <p>примерная площадь участка, выделенного под строительство в начале истории вуза</p>
+          </article>
+
+          <article class="fact-box">
+            <span class="fact-number">161</span>
+            <p>студент начал обучение в 1953 году</p>
+          </article>
+
+          <article class="fact-box">
+            <span class="fact-number">1958</span>
+            <p>год первого выпуска инженеров</p>
+          </article>
+
+          <article class="fact-box">
+            <span class="fact-number">200 000+</span>
+            <p>специалистов подготовил университет за свою историю</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="conclusion" class="content-section">
+        <h2>Заключение</h2>
+        <p id="conclusion-p1">
+          <a href="#conclusion-p1" class="anchor" aria-label="Ссылка на абзац">●</a>
+          История НГТУ НЭТИ — это путь от первых занятий в тесных помещениях до крупного
+          современного технического университета, известного далеко за пределами Новосибирска.
+        </p>
+        <p id="conclusion-p2">
+          <a href="#conclusion-p2" class="anchor" aria-label="Ссылка на абзац">●</a>
+          Сегодня университет сохраняет традиции, развивает науку, кампус, технологии
+          и остаётся важным центром инженерного образования.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 НГТУ НЭТИ — учебный макет сайта</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
