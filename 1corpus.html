@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>НГТУ НЭТИ — 1 корпус (исторический корпус К)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span>English</span>
+        <span>pk@nstu.ru</span>
+        <span>+7 (383) 319 59 99</span>
+        <span>приёмная комиссия</span>
+      </div>
+    </div>
+
+    <div class="header-main">
+      <div class="brand">
+        <div class="logo-slot">
+          <img src="logo.png" alt="Логотип НГТУ" id="logoImage" />
+          <div class="logo-placeholder" id="logoPlaceholder"></div>
+        </div>
+        <div class="brand-text"></div>
+      </div>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">На главную</a>
+        <a href="https://www.nstu.ru">Официальный сайт</a>
+        <a href="https://www.nstu.ru/entrance/enrollment_campaign">Поступающим</a>
+        <a href="index.html#campus">Карта</a>
+        <a href="index.html#timeline">Этапы</a>
+      </nav>
+
+      <!-- Панель доступности для слабовидящих -->
+      <div class="accessibility-panel" id="accessibilityPanel">
+        <button class="a11y-toggle" id="a11yToggle" aria-label="Открыть настройки доступности" title="Версия для слабовидящих">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 8v8"></path>
+            <path d="M8 12h8"></path>
+          </svg>
+        </button>
+        <div class="a11y-options" id="a11yOptions" role="dialog" aria-label="Настройки доступности">
+          <h4>Версия для слабовидящих</h4>
+          <div class="a11y-section">
+            <span class="a11y-label">Цветовая схема</span>
+            <button class="a11y-btn active" data-mode="default">Обычная</button>
+            <button class="a11y-btn" data-mode="high-contrast">Чёрно-белая</button>
+            <button class="a11y-btn" data-mode="yellow-black">Жёлто-чёрная</button>
+            <button class="a11y-btn" data-mode="blue-white">Сине-белая</button>
+          </div>
+          <div class="a11y-section">
+            <span class="a11y-label">Размер шрифта</span>
+            <button class="a11y-btn font-btn active" data-size="normal">A</button>
+            <button class="a11y-btn font-btn" data-size="large">A+</button>
+            <button class="a11y-btn font-btn" data-size="xlarge">A++</button>
+          </div>
+          <div class="a11y-section">
+            <button class="a11y-btn" id="a11ySpacing">Широкий интервал</button>
+            <button class="a11y-btn" id="a11yImages">Скрыть изображения</button>
+            <button class="a11y-btn" id="a11yUnderline">Подчёркивать ссылки</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Баннер корпуса">
+    <div class="hero-overlay" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 100%), url('https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
+      <div class="hero-content">
+        <p class="hero-top">Старейшее здание университета</p>
+        <h2>Первый учебный корпус НГТУ НЭТИ<br>(исторический корпус «К»)</h2>
+        <p class="hero-text">
+          Именно с этого здания, заложенного в 1950 году, началось формирование студенческого кампуса на левом берегу Оби. 
+          Сегодня здесь располагаются ректорат, ключевые административные службы и факультет прикладной математики и информатики.
+        </p>
+        <a href="#today-building" class="hero-button">Узнать о расположении</a>
+      </div>
+      <div class="hero-side-card">
+        <div class="hero-year">1960</div>
+        <p>год ввода в эксплуатацию</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-layout">
+    <aside class="sidebar" aria-label="Оглавление страницы">
+      <div class="sidebar-box">
+        <h3>Содержание</h3>
+        <ul class="toc">
+          <li><a href="#today-building">Корпус сегодня</a></li>
+          <li><a href="#faculties-departments">Факультеты и кафедры</a></li>
+          <li><a href="#admin-services">Административные службы</a></li>
+          <li><a href="#history-construction">История строительства</a></li>
+          <li><a href="#fun-facts">Интересные факты</a></li>
+          <li><a href="#map-location">Как найти</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section id="today-building" class="content-section">
+        <h2>Первый корпус сегодня</h2>
+        <p>
+          <span class="anchor">●</span>
+          <strong>Первый учебный корпус НГТУ НЭТИ (исторический корпус «К»)</strong> — старейшее учебное здание вуза и его исторический центр. Именно с этого здания, получившего при строительстве обозначение «К», началось формирование студенческого кампуса на левом берегу Оби. Сегодня здесь располагаются ректорат, ключевые административные службы и факультет прикладной математики и информатики.
+        </p>
+        <div style="margin: 20px 0; border-radius: 16px; overflow: hidden;">
+          <img src="1corpus.png" alt="Фотография первого корпуса НГТУ НЭТИ" style="width:100%; height:auto; object-fit:cover;">
+        </div>
+      </section>
+
+      <section id="faculties-departments" class="content-section">
+        <h2>Факультеты и кафедры (на 2025 год)</h2>
+        <div class="campus-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+          <div class="campus-card">
+            <h3>🎓 Факультет прикладной математики и информатики (ФПМИ)</h3>
+            <p>Деканат — аудитория I-208</p>
+          </div>
+          <div class="campus-card">
+            <h3>📐 Кафедра прикладной математики (ПМт)</h3>
+            <p>ФПМИ, ауд. I-205</p>
+          </div>
+          <div class="campus-card">
+            <h3>💻 Кафедра теоретической и прикладной информатики (ТПИ)</h3>
+            <p>ФПМИ, ауд. I-201</p>
+          </div>
+          <div class="campus-card">
+            <h3>⚙️ Кафедра параллельных вычислительных технологий (ПВТ)</h3>
+            <p>ФПМИ, ауд. I-206</p>
+          </div>
+          <div class="campus-card">
+            <h3>🖥️ Кафедра вычислительных технологий (Выч. технол.)</h3>
+            <p>ФПМИ, ауд. I-206б</p>
+          </div>
+          <div class="campus-card">
+            <h3>🌐 Кафедра иностранных языков технических факультетов (ИЯ ТФ)</h3>
+            <p>ФГО, ауд. I-503a</p>
+          </div>
+          <div class="campus-card">
+            <h3>📖 Кафедра русского языка (РЯз)</h3>
+            <p>ФГО, ауд. I-502</p>
+          </div>
+          <div class="campus-card">
+            <h3>🧪 Кафедра химии и химической технологии (ХХТ)</h3>
+            <p>Частично (основное расположение в 5 корпусе)</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="admin-services" class="content-section">
+        <h2>Административные и вспомогательные службы</h2>
+        <div class="facts-grid">
+          <div class="fact-box">
+            <span class="fact-number">📋</span>
+            <p>Бюро пропусков</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">📦</span>
+            <p>Архив</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">🏛️</span>
+            <p>Ректорат</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">📢</span>
+            <p>Управление информационной политики</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">👥</span>
+            <p>Студенческий отдел кадров</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">🎖️</span>
+            <p>Военно-учётный стол</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">🤝</span>
+            <p>Профсоюзная организация студентов</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="history-construction" class="content-section">
+        <h2>История строительства</h2>
+        <div class="timeline" style="border-left-color: var(--accent);">
+          <div class="timeline-item">
+            <div class="timeline-year">1950</div>
+            <div class="timeline-text">Закладка фундамента первого корпуса одновременно с основанием института.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">1953</div>
+            <div class="timeline-text">Начало занятий: студенты учатся в переоборудованных квартирах на ул. Римского-Корсакова.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">1954</div>
+            <div class="timeline-text">Построено первое собственное здание — общежитие (корпус «А»), временно использовалось для занятий.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">1960</div>
+            <div class="timeline-text">Ввод в эксплуатацию первого учебного корпуса (корпус «К») — спустя 10 лет после начала работ.</div>
+          </div>
+        </div>
+        <p style="margin-top: 20px;">
+          <span class="anchor">●</span>
+          До 1960 года институт не имел собственного учебного здания. Корпус «К» стал первым зданием, специально спроектированным для образовательного процесса.
+        </p>
+      </section>
+
+      <section id="fun-facts" class="content-section">
+        <h2>Интересные факты</h2>
+        <div class="facts-grid">
+          <div class="fact-box">
+            <span class="fact-number">🥔</span>
+            <p><strong>Картофельные поля вместо кампуса</strong> — первоначально НЭТИ хотели строить в центре, но подходящий участок в 20 га нашли только на левом берегу, где были поля. Связь с центром появилась после открытия Коммунального моста (1956) и метро «Студенческая».</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">🚶</span>
+            <p><strong>Проспект Орлова</strong> — студенты в 1955 году назвали так дорогу от трамвайной остановки до строящегося корпуса в честь первого декана радиотехнического факультета Василия Тимофеевича Орлова.</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">🤖</span>
+            <p><strong>Робот НЭТИ и Зося</strong> — в 1970-х в вестибюле стоял двухметровый робот с кнопками факультетов, а позже польские студенты подарили ему «подружку» Зосю. Оба робота исправно работают до сих пор!</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">🗺️</span>
+            <p><strong>Чердак 2ГИС</strong> — основатель компании 2ГИС Александр Сысоев вспоминал: «Реальный чердак в корпусе НЭТИ, где я учился, а потом и работал… Там родилась идея 2ГИС».</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">📜</span>
+            <p><strong>Мемориальный стенд «Основатели НЭТИ-НГТУ»</strong> — открыт в 2010 году на втором этаже к 60-летию вуза, содержит биографии 12 ключевых организаторов.</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">🔬</span>
+            <p><strong>Выставка «Инженерное сердце Сибири»</strong> — макет «Город будущего», приборы для СКИФ, преобразователи для спутников и блоки для самолётов.</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">📱</span>
+            <p><strong>Поэтажная карта от 2ГИС</strong> — с 2022 года все корпуса вуза доступны в смартфоне.</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">🍽️</span>
+            <p><strong>Столовая №1 в цоколе</strong> — легендарные булочки с повидлом и компот, гастрономический символ студенческой жизни нескольких поколений.</p>
+          </div>
+        </div>
+        <blockquote style="background: var(--blue-soft); padding: 16px 24px; border-radius: 16px; margin-top: 24px; font-style: italic;">
+          «В 80-е многие мировые стартапы начинались в гаражах, а у нас был чердак. Реальный чердак в корпусе НЭТИ, где я учился, а потом и работал… Там, на чердаке, и родилась идея 2ГИС, которая жива до сих пор».
+          <footer style="margin-top: 8px;">— Александр Сысоев, основатель 2ГИС</footer>
+        </blockquote>
+      </section>
+
+      <section id="map-location" class="content-section">
+        <h2>Как найти первый корпус</h2>
+        <p>📍 Адрес: г. Новосибирск, пр. Карла Маркса, 20 (главный вход).</p>
+        <p>🚇 Ближайшая станция метро: «Студенческая» (выход в сторону НГТУ).</p>
+        <p>🚌 Остановки транспорта: «НГТУ» (автобусы, троллейбусы, маршрутные такси).</p>
+        <div style="margin-top: 20px; border-radius: 16px; overflow: hidden; border: 1px solid var(--line);">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2bcecb09e85f5227603de1aad6796f7b3fb6748ddf645e560aa0121a642d85c7&amp;source=constructor" width="929" height="687" frameborder="0"></iframe>
+        </div>
+        <p style="margin-top: 16px;">У главного входа установлена памятная доска Георгию Павловичу Лыщинскому — ректору, руководившему вузом 35 лет.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 НГТУ НЭТИ — учебный макет сайта. Страница о первом корпусе (исторический корпус «К»).</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
