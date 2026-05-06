@@ -468,6 +468,41 @@ a {
     transform: translateY(-100%);
   }
 }
+/* Адаптация панели доступности для телефонов */
+@media (max-width: 768px) {
+  .a11y-options {
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 30px);
+    max-width: 320px;
+    right: auto;
+    border-radius: 20px;
+    padding: 16px;
+    z-index: 1003;
+  }
+  
+  .a11y-options.open {
+    display: block;
+  }
+  
+  .a11y-btn {
+    padding: 10px 12px;
+    font-size: 16px;
+    margin: 6px 4px 0 0;
+  }
+  
+  .a11y-section {
+    margin-bottom: 16px;
+  }
+  
+  /* Увеличиваем кликабельную область кнопки */
+  .a11y-toggle {
+    width: 48px;
+    height: 48px;
+  }
+}
 
 /* ===== Панель доступности ===== */
 .accessibility-panel {
