@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>НГТУ НЭТИ — Бомбардировщик Су-24 во дворе университета</title>
+  <link rel="stylesheet" href="style.css" />
+<base target="_blank">
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span>English</span>
+        <span>pk@nstu.ru</span>
+        <span>+7 (383) 319 59 99</span>
+        <span>приёмная комиссия</span>
+      </div>
+    </div>
+
+    <div class="header-main">
+      <div class="brand">
+        <div class="logo-slot">
+          <img src="logo.png" alt="Логотип НГТУ" id="logoImage" />
+          <div class="logo-placeholder" id="logoPlaceholder"></div>
+        </div>
+        <div class="brand-text"></div>
+      </div>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">На главную</a>
+        <a href="https://www.nstu.ru">Официальный сайт</a>
+        <a href="https://www.nstu.ru/entrance/enrollment_campaign">Поступающим</a>
+        <a href="index.html#campus">Карта</a>
+        <a href="index.html#timeline">Этапы</a>
+      </nav>
+
+      <!-- Панель доступности для слабовидящих -->
+      <div class="accessibility-panel" id="accessibilityPanel">
+        <button class="a11y-toggle" id="a11yToggle" aria-label="Открыть настройки доступности" title="Версия для слабовидящих">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 8v8"></path>
+            <path d="M8 12h8"></path>
+          </svg>
+        </button>
+        <div class="a11y-options" id="a11yOptions" role="dialog" aria-label="Настройки доступности">
+          <h4>Версия для слабовидящих</h4>
+          <div class="a11y-section">
+            <span class="a11y-label">Цветовая схема</span>
+            <button class="a11y-btn active" data-mode="default">Обычная</button>
+            <button class="a11y-btn" data-mode="high-contrast">Чёрно-белая</button>
+            <button class="a11y-btn" data-mode="yellow-black">Жёлто-чёрная</button>
+            <button class="a11y-btn" data-mode="blue-white">Сине-белая</button>
+          </div>
+          <div class="a11y-section">
+            <span class="a11y-label">Размер шрифта</span>
+            <button class="a11y-btn font-btn active" data-size="normal">A</button>
+            <button class="a11y-btn font-btn" data-size="large">A+</button>
+            <button class="a11y-btn font-btn" data-size="xlarge">A++</button>
+          </div>
+          <div class="a11y-section">
+            <button class="a11y-btn" id="a11ySpacing">Широкий интервал</button>
+            <button class="a11y-btn" id="a11yImages">Скрыть изображения</button>
+            <button class="a11y-btn" id="a11yUnderline">Подчёркивать ссылки</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Баннер Су-24">
+    <div class="hero-overlay" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 100%), url('su-24.jpg') center/cover no-repeat;">
+      <div class="hero-content">
+        <p class="hero-top">Настоящий боевой самолёт в кампусе университета</p>
+        <h2>Бомбардировщик Су-24<br>во дворе НГТУ НЭТИ</h2>
+        <p class="hero-text">
+          Между 1-м и 3-м корпусами на проспекте Карла Маркса стоит настоящий фронтовой 
+          бомбардировщик — подарок вузу к 70-летию от инженеров-выпускников.
+        </p>
+        <a href="#about" class="hero-button">Узнать историю</a>
+      </div>
+      <div class="hero-side-card">
+        <div class="hero-year">2021</div>
+        <p>год установки памятника</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-layout">
+    <aside class="sidebar" aria-label="Оглавление страницы">
+      <div class="sidebar-box">
+        <h3>Содержание</h3>
+        <ul class="toc">
+          <li><a href="#about">Откуда самолёт здесь</a></li>
+          <li><a href="#aircraft">Что это за самолёт</a></li>
+          <li><a href="#specs">Технические характеристики</a></li>
+          <li><a href="#history">История применения</a></li>
+          <li><a href="#inside">Что внутри</a></li>
+          <li><a href="#location">Где найти</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section id="about" class="content-section">
+        <h2>Откуда самолёт во дворе университета</h2>
+        <p>
+          <span class="anchor">●</span>
+          <strong>Су-24 появился здесь 26 октября 2021 года</strong> как подарок вузу к 70-летию. Инициатором выступила Ассоциация выпускников. Выбор машины неслучаен: многие выпускники НГТУ работали и продолжают работать на Новосибирском авиационном заводе имени Чкалова, где эти самолёты выпускались десятилетиями. По сути, инженеры подарили альма-матер машину, к созданию которой сами приложили руку.
+        </p>
+        <p>
+          <span class="anchor">●</span>
+          Самолёт перевезли с завода Чкалова. Из-за габаритов и веса операция получилась сложной. Длина машины — 22,5 метра, размах крыла — почти 16 метров, вес — 22 тонны. Чтобы провезти её через город, крылья сняли, погрузили фюзеляж на 30-метровый автопоезд и транспортировали ночью. На месте крылья монтировали обратно два дня.
+        </p>
+        <div style="margin: 20px 0; border-radius: 16px; overflow: hidden;">
+          <img src="su-24-campus.jpg" alt="Бомбардировщик Су-24 на постаменте во дворе НГТУ НЭТИ между 1-м и 3-м корпусами" style="width:100%; height:auto; object-fit:cover;">
+        </div>
+      </section>
+
+      <section id="aircraft" class="content-section">
+        <h2>Что это за самолёт</h2>
+        <p>
+          <span class="anchor">●</span>
+          <strong>Су-24</strong> — советский фронтовой бомбардировщик, разработанный в ОКБ Сухого. Серийно выпускался на заводе Чкалова с 1972 по 1993 год. По классификации НАТО получил обозначение <em>Fencer</em> («Фехтовальщик»). Среди лётчиков и техников закрепилось прозвище <strong>«Чемодан»</strong> — из-за широкого и плоского фюзеляжа.
+        </p>
+        <p>
+          <span class="anchor">●</span>
+          Главная техническая особенность — <strong>крыло изменяемой стреловидности</strong>. На взлёте и посадке крылья выставляются почти прямо, что даёт хорошую подъёмную силу. На сверхзвуковых скоростях они прижимаются к фюзеляжу, снижая сопротивление. Это позволяет совмещать короткий разбег с высокой скоростью полёта у земли.
+        </p>
+        <p>
+          <span class="anchor">●</span>
+          Су-24 стал <strong>первым советским бомбардировщиком с системой автоматического облёта рельефа</strong>. Машина способна идти на сверхзвуке на высоте около 200 метров, повторяя изгибы местности и оставаясь незаметной для радаров противника.
+        </p>
+      </section>
+
+      <section id="specs" class="content-section">
+        <h2>Технические характеристики</h2>
+        <div class="facts-grid">
+          <div class="fact-box">
+            <span class="fact-number">22,5 м</span>
+            <p>длина самолёта</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">~16 м</span>
+            <p>размах крыла</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">22 т</span>
+            <p>вес машины</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">1972–1993</span>
+            <p>годы серийного производства на заводе Чкалова</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">200 м</span>
+            <p>высота полёта при облёте рельефа</p>
+          </div>
+          <div class="fact-box">
+            <span class="fact-number">3 м</span>
+            <p>высота постамента в кампусе НГТУ</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="history" class="content-section">
+        <h2>История применения</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">1972</div>
+            <div class="timeline-text">Начало серийного производства Су-24 на заводе Чкалова в Новосибирске.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">1980-е</div>
+            <div class="timeline-text">Применение в Афганистане.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">1990-е</div>
+            <div class="timeline-text">Участие в обеих Чеченских кампаниях.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2015+</div>
+            <div class="timeline-text">Операция в Сирии.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2021</div>
+            <div class="timeline-text">Су-24М выполнил предупредительное бомбометание у курса британского эсминца «Defender» в Чёрном море.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2021</div>
+            <div class="timeline-text">Установка памятника в сквере Авиастроителей НГТУ НЭТИ.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="inside" class="content-section">
+        <h2>Что внутри и можно ли посмотреть</h2>
+        <p>
+          <span class="anchor">●</span>
+          Уличный Су-24 — <strong>не единственный в университете</strong>. На факультете летательных аппаратов внутри учебного корпуса находится ещё один такой же, и он используется для занятий.
+        </p>
+        <p>
+          <span class="anchor">●</span>
+          Всего в лабораториях ФЛА стоят несколько машин ОКБ Сухого: <strong>Су-15, Су-25, Су-27 и Су-24</strong>. В отличие от памятника на постаменте, внутренние самолёты частично рабочие — у них движется механизация крыла, открываются створки шасси и работают некоторые системы. Студенты изучают на них конструкцию и наземную эксплуатацию авиатехники.
+        </p>
+        <p>
+          <span class="anchor">●</span>
+          Памятник установлен в <strong>сквере Авиастроителей</strong> и доступен для осмотра круглосуточно. Внутрь кабины обычного посетителя не пустят, но раз в год, во время акции <strong>«Ночь музеев»</strong>, лаборатории ФЛА открывают для экскурсий, и там можно увидеть самолёты изнутри.
+        </p>
+        <div class="campus-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+          <div class="campus-card">
+            <h3>🛩️ Уличный Су-24</h3>
+            <p>Памятник в сквере Авиастроителей. Доступен круглосуточно. Осмотр снаружи.</p>
+          </div>
+          <div class="campus-card">
+            <h3>🔧 Учебный Су-24</h3>
+            <p>В лабораториях ФЛА. Частично рабочий: движется механизация крыла, открываются створки шасси.</p>
+          </div>
+          <div class="campus-card">
+            <h3>📚 Другие машины</h3>
+            <p>Су-15, Су-25, Су-27 — для изучения конструкции и наземной эксплуатации.</p>
+          </div>
+          <div class="campus-card">
+            <h3>🌙 Ночь музеев</h3>
+            <p>Раз в год лаборатории открывают для экскурсий. Можно увидеть самолёты изнутри.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" class="content-section">
+        <h2>Где найти самолёт</h2>
+        <p>📍 <strong>Место:</strong> сквер Авиастроителей, между 1-м и 3-м корпусами НГТУ, проспект Карла Маркса.</p>
+        <p>🚇 <strong>Метро:</strong> «Студенческая» (выход в сторону НГТУ).</p>
+        <p>🚌 <strong>Транспорт:</strong> остановка «НГТУ».</p>
+        <p>🕐 <strong>Доступ:</strong> круглосуточно, бесплатно.</p>
+        <p style="margin-top: 16px;">
+          <a href="index.html#campus" class="hero-button" style="display: inline-block;">Посмотреть карту кампуса →</a>
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 НГТУ НЭТИ — учебный макет сайта. Страница о бомбардировщике Су-24.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -218,3 +218,23 @@ window.addEventListener("load", () => {
     });
   });
 })();
+
+
+// Плавная прокрутка для всех якорных ссылок
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    
+    // Пропускаем если это просто # или javascript:void
+    if (href === '#' || href.startsWith('javascript')) return;
+    
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});

@@ -28,6 +28,8 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.65;
+  overflow-x: hidden;
+  width: 100;
 }
 
 img {
@@ -472,38 +474,26 @@ a {
 @media (max-width: 768px) {
   .a11y-options {
     position: fixed;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 30px);
-    max-width: 320px;
-    right: auto;
-    border-radius: 20px;
+    top: 70px;
+    left: 10px;           /* ← привязка к левому краю */
+    right: 10px;          /* ← привязка к правому краю */
+    transform: none;      /* ← убрать центрирование */
+    width: auto;          /* ← растянуть между left/right */
+    max-width: none;      /* ← убрать ограничение */
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    border-radius: 16px;
     padding: 16px;
     z-index: 1003;
   }
   
-  .a11y-options.open {
-    display: block;
-  }
-  
   .a11y-btn {
-    padding: 10px 12px;
+    padding: 12px 14px;   /* ← увеличить зону касания */
     font-size: 16px;
-    margin: 6px 4px 0 0;
-  }
-  
-  .a11y-section {
-    margin-bottom: 16px;
-  }
-  
-  /* Увеличиваем кликабельную область кнопки */
-  .a11y-toggle {
-    width: 48px;
-    height: 48px;
+    min-height: 44px;     /* ← WCAG 2.1 рекомендация */
+    margin: 4px 2px 0 0;
   }
 }
-
 /* ===== Панель доступности ===== */
 .accessibility-panel {
   position: relative;
